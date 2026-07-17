@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const VARIANT_STYLES = {
   primary:
     "bg-brand-500 text-white hover:bg-brand-600 shadow-sm shadow-brand-500/20",
@@ -13,8 +15,9 @@ const SIZE_STYLES = {
 };
 
 /**
- * Shared CTA button. Renders as an anchor when `href` is provided,
- * otherwise as a native button (for in-page actions).
+ * Shared CTA button. External hrefs (http...) render as <a target="_blank">.
+ * Internal hrefs render as a router <Link> for client-side navigation.
+ * With no href, renders a native <button> for in-page actions.
  */
 export default function Button({
   children,
@@ -31,16 +34,21 @@ export default function Button({
 
   if (href) {
     const isExternal = href.startsWith("http");
+
+    if (isExternal) {
+      return (
+        <a href={href} className={classes} target="_blank" rel="noopener noreferrer">
+          {Icon && <Icon fontSize="small" />}
+          {children}
+        </a>
+      );
+    }
+
     return (
-      <a
-        href={href}
-        className={classes}
-        target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noopener noreferrer" : undefined}
-      >
+      <Link to={href} className={classes}>
         {Icon && <Icon fontSize="small" />}
         {children}
-      </a>
+      </Link>
     );
   }
 

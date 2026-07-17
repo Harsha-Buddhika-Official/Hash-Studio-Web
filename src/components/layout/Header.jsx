@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -8,7 +9,18 @@ import { navLinks } from "../../data/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const activePath = "/";
+
+  const linkClasses = ({ isActive }) =>
+    `text-sm font-medium pb-1 border-b-2 transition-colors ${
+      isActive
+        ? "text-brand-600 border-brand-500"
+        : "text-ink-600 border-transparent hover:text-ink-900"
+    }`;
+
+  const mobileLinkClasses = ({ isActive }) =>
+    `rounded-lg px-3 py-2.5 text-sm font-medium ${
+      isActive ? "bg-brand-50 text-brand-700" : "text-ink-600 hover:bg-ink-50"
+    }`;
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-ink-100">
@@ -18,22 +30,16 @@ export default function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => {
-              const isActive = link.href === activePath;
-              return (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className={`text-sm font-medium pb-1 border-b-2 transition-colors ${
-                    isActive
-                      ? "text-brand-600 border-brand-500"
-                      : "text-ink-600 border-transparent hover:text-ink-900"
-                  }`}
-                >
-                  {link.label}
-                </a>
-              );
-            })}
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.href}
+                to={link.href}
+                end={link.href === "/"}
+                className={linkClasses}
+              >
+                {link.label}
+              </NavLink>
+            ))}
           </nav>
 
           <div className="hidden md:block">
@@ -59,23 +65,17 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden border-t border-ink-100 bg-white">
           <nav className="flex flex-col px-5 py-4 gap-1">
-            {navLinks.map((link) => {
-              const isActive = link.href === activePath;
-              return (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`rounded-lg px-3 py-2.5 text-sm font-medium ${
-                    isActive
-                      ? "bg-brand-50 text-brand-700"
-                      : "text-ink-600 hover:bg-ink-50"
-                  }`}
-                >
-                  {link.label}
-                </a>
-              );
-            })}
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.href}
+                to={link.href}
+                end={link.href === "/"}
+                onClick={() => setIsMenuOpen(false)}
+                className={mobileLinkClasses}
+              >
+                {link.label}
+              </NavLink>
+            ))}
             <Button
               href="https://wa.me/94000000000"
               icon={WhatsAppIcon}
