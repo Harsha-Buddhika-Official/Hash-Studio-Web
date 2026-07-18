@@ -43,7 +43,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:block">
-            <Button href="https://wa.me/94000000000" icon={WhatsAppIcon}>
+            <Button href="https://wa.me/+94719431969" icon={WhatsAppIcon}>
               Chat on WhatsApp
             </Button>
           </div>
@@ -77,7 +77,7 @@ export default function Header() {
               </NavLink>
             ))}
             <Button
-              href="https://wa.me/94000000000"
+              href="https://wa.me/+94719431969"
               icon={WhatsAppIcon}
               className="mt-3 w-full"
             >

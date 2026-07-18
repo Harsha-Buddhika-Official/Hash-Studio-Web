@@ -73,5 +73,5 @@ export const portfolioProjects = [
 
 export const portfolioCta = {
   heading: "Ready to start your project?",
-  cta: { label: "Let's Work Together", href: "https://wa.me/94000000000" },
+  cta: { label: "Let's Work Together", href: "https://wa.me/+94719431969" },
 };

@@ -7,6 +7,8 @@ const VARIANT_STYLES = {
     "bg-white text-ink-800 border border-ink-200 hover:border-ink-400",
   inverse:
     "bg-white text-brand-700 hover:bg-white/90",
+  outlineDark:
+    "bg-transparent text-white border border-white/30 hover:border-white",
 };
 
 const SIZE_STYLES = {
@@ -14,11 +16,6 @@ const SIZE_STYLES = {
   lg: "px-6 py-3.5 text-base",
 };
 
-/**
- * Shared CTA button. External hrefs (http...) render as <a target="_blank">.
- * Internal hrefs render as a router <Link> for client-side navigation.
- * With no href, renders a native <button> for in-page actions.
- */
 export default function Button({
   children,
   href,
