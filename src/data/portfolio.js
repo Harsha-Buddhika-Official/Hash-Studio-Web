@@ -110,6 +110,11 @@ const rawProjects = [
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784370932/Gemini_Generated_Image_vqf5jfvqf5jfvqf5_rkucrp.png",
   },
   {
+    title: "Flyer Design",
+    categories: ["Flyer"],
+    image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784474182/Gemini_Generated_Image_4hyp244hyp244hyp_zmc07r.jpg",
+  },
+  {
     title: "Packaging Design",
     categories: ["Packaging"],
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784366178/labels_3_ply9fs.jpg",
@@ -170,8 +175,8 @@ export const portfolioProjects = rawProjects
 
 export const portfolioCta = {
   heading: "Have a project in mind?",
-  cta: { 
-    label: "Let's Create Together", 
-    href: buildWhatsAppLink() 
+  cta: {
+    label: "Let's Create Together",
+    href: buildWhatsAppLink()
   },
 };
