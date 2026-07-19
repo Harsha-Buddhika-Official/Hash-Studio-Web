@@ -1,11 +1,16 @@
-import { Link } from "react-router-dom";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { SERVICE_ICONS } from "../shared/serviceIcons";
 import { SERVICE_COLORWAYS } from "../shared/serviceColorways";
+import { buildWhatsAppLink } from "../../data/siteConfig";
 
 export default function ServiceCard({ service }) {
   const Icon = SERVICE_ICONS[service.icon];
   const colorway = SERVICE_COLORWAYS[service.colorway];
+  const whatsappHref = buildWhatsAppLink(
+    service.whatsappMessage ??
+      `Hi Hash Studio! I'm interested in your ${service.title} service. Could you tell me more about pricing and timelines?`
+  );
 
   return (
     <div
@@ -25,7 +30,7 @@ export default function ServiceCard({ service }) {
         {service.description}
       </p>
 
-      <ul className="mt-5 space-y-2.5">
+      <ul className="mt-5 mb-5 space-y-2.5">
         {service.features.map((feature) => (
           <li key={feature} className="flex items-center gap-2 text-xs font-bold tracking-wide text-ink-800 uppercase">
             <CheckCircleIcon sx={{ fontSize: 16 }} className={colorway.fg} />
@@ -34,13 +39,15 @@ export default function ServiceCard({ service }) {
         ))}
       </ul>
 
-      <Link
-        to="/contact"
-        state={{ service: service.title }}
-        className={`mt-7 inline-flex items-center justify-center rounded-full px-5 py-3 text-xs font-bold tracking-widest uppercase text-white transition-colors ${colorway.button}`}
+      <a
+        href={whatsappHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`mt-auto inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-xs font-bold tracking-widest uppercase text-white transition-colors ${colorway.button}`}
       >
+        <WhatsAppIcon sx={{ fontSize: 16 }} />
         WhatsApp Inquiry
-      </Link>
+      </a>
     </div>
   );
 }

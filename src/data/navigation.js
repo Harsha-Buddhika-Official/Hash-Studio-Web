@@ -1,3 +1,5 @@
+import { buildWhatsAppLink, SOCIAL_LINKS } from "./siteConfig";
+
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Portfolio", href: "/portfolio" },
@@ -7,6 +9,8 @@ export const navLinks = [
 ];
 
 export const footerLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61555668831424" },
-  { label: "WhatsApp", href: "https://wa.me/+94719431969" },
+  { label: "Instagram", href: SOCIAL_LINKS.instagram },
+  { label: "Dribbble", href: SOCIAL_LINKS.dribbble },
+  { label: "Behance", href: SOCIAL_LINKS.behance },
+  { label: "WhatsApp", href: buildWhatsAppLink() },
 ];

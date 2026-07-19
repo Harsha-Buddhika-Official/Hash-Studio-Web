@@ -10,9 +10,11 @@ export default function PortfolioGrid({ projects, onSelect }) {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+    <div className="columns-1 sm:columns-2 gap-5 sm:gap-6">
       {projects.map((project) => (
-        <PortfolioCard key={project.id} project={project} onSelect={onSelect} />
+        <div key={project.id} className="mb-5 sm:mb-6 break-inside-avoid">
+          <PortfolioCard project={project} onSelect={onSelect} />
+        </div>
       ))}
     </div>
   );

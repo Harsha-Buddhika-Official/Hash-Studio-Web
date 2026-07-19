@@ -1,8 +1,7 @@
 import { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { projectTypes, inquiryFormCopy } from "../../data/contact";
-
-const WHATSAPP_NUMBER = "94000000000";
+import { buildWhatsAppLink } from "../../data/siteConfig";
 
 const INITIAL_STATE = {
   fullName: "",
@@ -31,8 +30,7 @@ export default function InquiryForm() {
       .filter(Boolean)
       .join("\n");
 
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank", "noopener,noreferrer");
+    window.open(buildWhatsAppLink(message), "_blank", "noopener,noreferrer");
   };
 
   return (

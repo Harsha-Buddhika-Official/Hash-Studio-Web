@@ -123,6 +123,31 @@ button:focus-visible {
   animation: scale-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* Card/logo float used in HeroVisual */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.animate-float-slow {
+  animation: float 6.5s ease-in-out infinite;
+}
+
+.animate-float-slower {
+  animation: float 7.5s ease-in-out infinite;
+  animation-delay: -2.5s;
+}
+
+.animate-float-badge {
+  animation: float 5.5s ease-in-out infinite;
+  animation-delay: -1s;
+}
+
+/* Smaller, faster bob used for the HeroVisual orbit label pills */
 @keyframes pill-bob {
   0%   { transform: translate3d(0, 0, 0); }
   25%  { transform: translate3d(0, -3px, 0); }
@@ -144,4 +169,20 @@ button:focus-visible {
   animation: pill-bob 5.2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
   animation-delay: -2.8s;
   will-change: transform;
+}
+
+/* Staggered reveal used by Expertise.jsx and Testimonials.jsx "See More" */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out forwards;
 }

@@ -1,14 +1,30 @@
 export const aboutHero = {
-  eyebrow: "Our Story",
+  eyebrow: "About Hash Studio",
   headline: [
-    { text: "Crafting Digital", accent: false },
-    { text: "Elegance since", accent: true },
-    { text: "2018.", accent: false },
+    { text: "Turning Creative", accent: false },
+    { text: "Ideas Into", accent: true },
+    { text: "Visual Impact.", accent: false },
   ],
   description:
-    "At Hash Studio, we believe that design is more than just aesthetics; it's the bridge between technological possibility and human experience. We started as a small collective of visionaries and have grown into a premier creative powerhouse.",
+    "Founded in 2020, Hash Studio is a creative graphic design studio dedicated to helping businesses, brands, and individuals stand out through impactful visual design. From memorable logos and engaging social media content to packaging, print materials, and UI/UX design, we combine creativity with strategy to deliver designs that leave a lasting impression.",
   stats: [
-    { id: "projects", value: "150+", label: "Global Projects", color: "brand" },
-    { id: "awards", value: "12", label: "Design Awards", color: "orange" },
+    {
+      id: "reviews",
+      value: "7+",
+      label: "Facebook Reviews",
+      color: "brand",
+    },
+    {
+      id: "services",
+      value: "10+",
+      label: "Design Services",
+      color: "orange",
+    },
+    {
+      id: "since",
+      value: "2020",
+      label: "Creative Since",
+      color: "coral",
+    },
   ],
 };

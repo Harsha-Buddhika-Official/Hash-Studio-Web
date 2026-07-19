@@ -6,6 +6,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Logo from "../common/Logo";
 import Button from "../common/Button";
 import { navLinks } from "../../data/navigation";
+import { buildWhatsAppLink } from "../../data/siteConfig";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:block">
-            <Button href="https://wa.me/+94719431969" icon={WhatsAppIcon}>
+            <Button href={buildWhatsAppLink()} icon={WhatsAppIcon}>
               Chat on WhatsApp
             </Button>
           </div>

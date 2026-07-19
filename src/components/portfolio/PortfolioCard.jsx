@@ -11,22 +11,19 @@ export default function PortfolioCard({ project, onSelect }) {
     <button
       type="button"
       onClick={() => onSelect(project)}
-      className="group relative block h-72 sm:h-80 w-full text-left rounded-3xl border border-ink-100 overflow-hidden hover:shadow-card transition-shadow"
+      className="group relative block w-full text-left rounded-3xl border border-ink-100 overflow-hidden hover:shadow-card transition-shadow"
     >
-      <div
-        className="absolute inset-0 transform-gpu transition-transform duration-700 ease-out
-          group-hover:scale-105 group-hover:blur-[1.5px]"
-      >
+      <div className="w-full transform-gpu transition-transform duration-700 ease-out group-hover:scale-105 group-hover:blur-[1.5px]">
         {showImage ? (
           <img
             src={project.image}
             alt={project.title}
             loading="lazy"
             onError={() => setImageFailed(true)}
-            className="h-full w-full object-cover"
+            className="h-auto w-full block"
           />
         ) : (
-          <div className="h-full w-full flex items-center justify-center bg-ink-100 text-ink-400 text-sm">
+          <div className="aspect-[4/5] w-full flex items-center justify-center bg-ink-100 text-ink-400 text-sm">
             Image unavailable
           </div>
         )}

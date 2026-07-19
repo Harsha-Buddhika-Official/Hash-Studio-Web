@@ -1,9 +1,11 @@
 import WorkspacesIcon from "@mui/icons-material/Workspaces";
 import { aboutHero } from "../../data/about";
+import office from "../../assets/office.png";
 
 const STAT_COLOR = {
   brand: "text-brand-500",
   orange: "text-chip-orange-fg",
+  coral: "text-chip-coral-fg",
 };
 
 export default function AboutHero() {
@@ -52,7 +54,7 @@ export default function AboutHero() {
               transform-gpu transition-transform duration-700 ease-out
               group-hover:scale-110 group-hover:blur-[2px]"
           >
-            <WorkspacesIcon sx={{ fontSize: 96 }} className="text-slate-400/60" />
+            <img src={office} alt="About Hero" className="w-full h-full object-cover" />
           </div>
           <div className="absolute inset-0 bg-brand-700/0 group-hover:bg-brand-700/20 transition-colors duration-500 ease-out" />
         </div>
