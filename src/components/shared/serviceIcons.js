@@ -11,12 +11,8 @@ import RestaurantMenuOutlinedIcon from "@mui/icons-material/RestaurantMenuOutlin
 import PhotoSizeSelectLargeOutlinedIcon from "@mui/icons-material/PhotoSizeSelectLargeOutlined";
 import DevicesOutlinedIcon from "@mui/icons-material/DevicesOutlined";
 import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFilledOutlined";
+import ArticleIcon from '@mui/icons-material/Article';
 
-/**
- * Single icon registry for every service, keyed by the `icon` field in
- * data/services.js. Used by both ExpertiseCard (Home) and ServiceCard
- * (Services page) so an icon only ever needs to change in one place.
- */
 export const SERVICE_ICONS = {
   logo: BrandingWatermarkOutlinedIcon,
   identity: PaletteOutlinedIcon,
@@ -31,4 +27,5 @@ export const SERVICE_ICONS = {
   billboard: PhotoSizeSelectLargeOutlinedIcon,
   uiux: DevicesOutlinedIcon,
   vehicle: DirectionsCarFilledOutlinedIcon,
+  document: ArticleIcon,
 };

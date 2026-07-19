@@ -95,6 +95,18 @@ export const services = [
       "Hi Hash Studio! I need product label designs. Can we discuss the details?",
   },
   {
+    id: "CV Design",
+    icon: "document",
+    colorway: "teal",
+    title: "CV Design",
+    description:
+      "Professional CV designs that highlight your skills and experience in a visually appealing way.",
+    tags: ["RESUME", "CV"],
+    features: ["Modern layouts", "Print-ready files", "Custom designs"],
+    whatsappMessage:
+      "Hi Hash Studio! I need a CV design. Can we discuss the details?",
+  },
+  {
     id: "business-card",
     icon: "card",
     colorway: "indigo",
