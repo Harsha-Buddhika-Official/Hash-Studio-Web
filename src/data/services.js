@@ -144,7 +144,7 @@ export const services = [
   },
   {
     id: "t-shirt-design",
-    icon: "tshirt",
+    icon: "clothing",
     colorway: "green",
     title: "T-Shirt Design",
     description:

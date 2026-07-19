@@ -12,6 +12,7 @@ import PhotoSizeSelectLargeOutlinedIcon from "@mui/icons-material/PhotoSizeSelec
 import DevicesOutlinedIcon from "@mui/icons-material/DevicesOutlined";
 import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFilledOutlined";
 import ArticleIcon from '@mui/icons-material/Article';
+import CheckroomIcon from '@mui/icons-material/Checkroom';
 
 export const SERVICE_ICONS = {
   logo: BrandingWatermarkOutlinedIcon,
@@ -28,4 +29,5 @@ export const SERVICE_ICONS = {
   uiux: DevicesOutlinedIcon,
   vehicle: DirectionsCarFilledOutlinedIcon,
   document: ArticleIcon,
+  clothing: CheckroomIcon,
 };
