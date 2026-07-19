@@ -7,8 +7,6 @@ export const navLinks = [
 ];
 
 export const footerLinks = [
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "Dribbble", href: "https://dribbble.com" },
-  { label: "Behance", href: "https://behance.net" },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61555668831424" },
   { label: "WhatsApp", href: "https://wa.me/+94719431969" },
 ];

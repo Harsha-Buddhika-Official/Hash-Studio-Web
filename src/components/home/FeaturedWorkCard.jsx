@@ -1,75 +1,52 @@
-import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-import BoltIcon from "@mui/icons-material/Bolt";
-import LiquorIcon from "@mui/icons-material/Liquor";
-import InsertChartOutlinedIcon from "@mui/icons-material/InsertChartOutlined";
+import { useState } from "react";
+import { categoryColors } from "../../data/portfolio";
 
-const THEME_CONFIG = {
-  paper: {
-    bg: "bg-gradient-to-br from-stone-100 to-stone-200",
-    icon: DescriptionOutlinedIcon,
-    iconColor: "text-stone-500",
-    overlay: "bg-brand-700/0 group-hover:bg-brand-700/45",
-  },
-  energy: {
-    bg: "bg-gradient-to-br from-fuchsia-600 via-indigo-600 to-sky-500",
-    icon: BoltIcon,
-    iconColor: "text-white",
-    overlay: "bg-indigo-950/0 group-hover:bg-indigo-950/45",
-  },
-  spirits: {
-    bg: "bg-gradient-to-br from-amber-50 to-orange-100",
-    icon: LiquorIcon,
-    iconColor: "text-amber-600",
-    overlay: "bg-amber-800/0 group-hover:bg-amber-800/40",
-  },
-  dashboard: {
-    bg: "bg-gradient-to-br from-ink-900 to-ink-800",
-    icon: InsertChartOutlinedIcon,
-    iconColor: "text-brand-300",
-    overlay: "bg-brand-600/0 group-hover:bg-brand-600/45",
-  },
-};
-
-export default function FeaturedWorkCard({ project }) {
-  const theme = THEME_CONFIG[project.theme];
-  const Icon = theme.icon;
+export default function FeaturedWorkCard({ project, onSelect }) {
+  const [imageFailed, setImageFailed] = useState(false);
+  const primaryCategory = project.categories[0];
+  const labelColor = categoryColors[primaryCategory] ?? "text-brand-500";
+  const showImage = project.image && !imageFailed;
 
   return (
-    <a
-      href={`/portfolio/${project.id}`}
-      className="group relative block h-56 sm:h-64 rounded-2xl border border-ink-100 overflow-hidden hover:shadow-card transition-shadow"
+    <button
+      type="button"
+      onClick={() => onSelect(project)}
+      className="group relative block h-56 sm:h-64 w-full text-left rounded-2xl border border-ink-100 overflow-hidden hover:shadow-card transition-shadow"
     >
-      {/* Image layer — zooms + blurs on hover */}
       <div
-        className={`absolute inset-0 flex items-center justify-center ${theme.bg}
-          transform-gpu transition-transform duration-700 ease-out
-          group-hover:scale-110 group-hover:blur-[3px]`}
+        className="absolute inset-0 transform-gpu transition-transform duration-700 ease-out
+          group-hover:scale-105 group-hover:blur-[1.5px]"
       >
-        <Icon sx={{ fontSize: 56 }} className={`${theme.iconColor} opacity-80`} />
+        {showImage ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            loading="lazy"
+            onError={() => setImageFailed(true)}
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <div className="h-full w-full flex items-center justify-center bg-ink-100 text-ink-400 text-sm">
+            Image unavailable
+          </div>
+        )}
       </div>
 
-      {/* Full-card color wash — unique tint per card, fades in on hover */}
-      <div
-        className={`absolute inset-0 transition-colors duration-500 ease-out ${theme.overlay}`}
-      />
+      <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
 
-      {/* Subtle bottom-to-top darkening so text stays legible even pre-tint */}
-      <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/35 via-black/0 to-transparent" />
-
-      {/* Label — eyebrow category + bold title, bottom-left, slides up on hover */}
       <div
         className="absolute inset-x-0 bottom-0 p-4 sm:p-5
           opacity-0 translate-y-2
           group-hover:opacity-100 group-hover:translate-y-0
           transition-all duration-500 ease-out"
       >
-        <p className="text-[11px] font-semibold tracking-wide text-white/85">
-          {project.category}
+        <p className={`text-[11px] font-bold tracking-widest uppercase ${labelColor}`}>
+          {primaryCategory}
         </p>
         <p className="mt-0.5 text-lg font-bold text-white leading-tight">
           {project.title}
         </p>
       </div>
-    </a>
+    </button>
   );
 }

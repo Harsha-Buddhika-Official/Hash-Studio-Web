@@ -1,64 +1,21 @@
 import { Link } from "react-router-dom";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import BrandingWatermarkOutlinedIcon from "@mui/icons-material/BrandingWatermarkOutlined";
-import PaletteOutlinedIcon from "@mui/icons-material/PaletteOutlined";
-import DynamicFeedOutlinedIcon from "@mui/icons-material/DynamicFeedOutlined";
-import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
-import DevicesOutlinedIcon from "@mui/icons-material/DevicesOutlined";
-import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFilledOutlined";
-
-const ICONS = {
-  logo: BrandingWatermarkOutlinedIcon,
-  identity: PaletteOutlinedIcon,
-  social: DynamicFeedOutlinedIcon,
-  packaging: Inventory2OutlinedIcon,
-  uiux: DevicesOutlinedIcon,
-  vehicle: DirectionsCarFilledOutlinedIcon,
-};
-
-const COLORWAYS = {
-  blue: {
-    iconBg: "bg-chip-blue-bg",
-    iconFg: "text-chip-blue-fg",
-    checkFg: "text-chip-blue-fg",
-    button: "bg-brand-500 hover:bg-brand-600",
-    border: "border-chip-blue-fg/15 hover:border-chip-blue-fg/60",
-    hoverBg: "hover:bg-chip-blue-bg/20",
-    glow: "hover:shadow-[0_18px_45px_-15px_rgba(47,111,237,0.35)]",
-  },
-  orange: {
-    iconBg: "bg-chip-orange-bg",
-    iconFg: "text-chip-orange-fg",
-    checkFg: "text-chip-orange-fg",
-    button: "bg-chip-orange-fg hover:brightness-95",
-    border: "border-chip-orange-fg/15 hover:border-chip-orange-fg/60",
-    hoverBg: "hover:bg-chip-orange-bg/20",
-    glow: "hover:shadow-[0_18px_45px_-15px_rgba(234,154,62,0.4)]",
-  },
-  coral: {
-    iconBg: "bg-chip-coral-bg",
-    iconFg: "text-chip-coral-fg",
-    checkFg: "text-chip-coral-fg",
-    button: "bg-chip-coral-fg hover:brightness-95",
-    border: "border-chip-coral-fg/15 hover:border-chip-coral-fg/60",
-    hoverBg: "hover:bg-chip-coral-bg/20",
-    glow: "hover:shadow-[0_18px_45px_-15px_rgba(226,104,95,0.4)]",
-  },
-};
+import { SERVICE_ICONS } from "../shared/serviceIcons";
+import { SERVICE_COLORWAYS } from "../shared/serviceColorways";
 
 export default function ServiceCard({ service }) {
-  const Icon = ICONS[service.icon];
-  const colorway = COLORWAYS[service.colorway];
+  const Icon = SERVICE_ICONS[service.icon];
+  const colorway = SERVICE_COLORWAYS[service.colorway];
 
   return (
     <div
       className={`rounded-2xl border bg-white p-6 sm:p-7 flex flex-col
         transition-all duration-300 ease-out
         hover:-translate-y-1
-        ${colorway.border} ${colorway.hoverBg} ${colorway.glow}`}
+        border-ink-100 ${colorway.hoverBorder} ${colorway.hoverBg} ${colorway.glow}`}
     >
       <span
-        className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl ${colorway.iconBg} ${colorway.iconFg} mb-6`}
+        className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl border ${colorway.stroke} ${colorway.bg} ${colorway.fg} mb-6`}
       >
         <Icon sx={{ fontSize: 26 }} />
       </span>
@@ -71,7 +28,7 @@ export default function ServiceCard({ service }) {
       <ul className="mt-5 space-y-2.5">
         {service.features.map((feature) => (
           <li key={feature} className="flex items-center gap-2 text-xs font-bold tracking-wide text-ink-800 uppercase">
-            <CheckCircleIcon sx={{ fontSize: 16 }} className={colorway.checkFg} />
+            <CheckCircleIcon sx={{ fontSize: 16 }} className={colorway.fg} />
             {feature}
           </li>
         ))}

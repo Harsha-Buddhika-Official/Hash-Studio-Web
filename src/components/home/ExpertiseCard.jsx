@@ -1,44 +1,16 @@
-import PentagonOutlinedIcon from "@mui/icons-material/PentagonOutlined";
-import ShareIcon from "@mui/icons-material/Share";
-import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
-
-const ICONS = {
-  logo: PentagonOutlinedIcon,
-  social: ShareIcon,
-  packaging: Inventory2OutlinedIcon,
-};
-
-const COLORWAYS = {
-  blue: {
-    bg: "bg-chip-blue-bg",
-    fg: "text-chip-blue-fg",
-    stroke: "border-chip-blue-fg/40",
-    hoverBorder: "hover:border-chip-blue-fg/50",
-  },
-  orange: {
-    bg: "bg-chip-orange-bg",
-    fg: "text-chip-orange-fg",
-    stroke: "border-chip-orange-fg/40",
-    hoverBorder: "hover:border-chip-orange-fg/50",
-  },
-  coral: {
-    bg: "bg-chip-coral-bg",
-    fg: "text-chip-coral-fg",
-    stroke: "border-chip-coral-fg/40",
-    hoverBorder: "hover:border-chip-coral-fg/50",
-  },
-};
+import { SERVICE_ICONS } from "../shared/serviceIcons";
+import { SERVICE_COLORWAYS } from "../shared/serviceColorways";
 
 export default function ExpertiseCard({ service }) {
-  const Icon = ICONS[service.icon];
-  const colorway = COLORWAYS[service.colorway];
+  const Icon = SERVICE_ICONS[service.icon];
+  const colorway = SERVICE_COLORWAYS[service.colorway];
 
   return (
     <div
-      className={`rounded-2xl border border-ink-100 bg-white p-6 sm:p-7 transition-colors duration-400 ${colorway.hoverBorder}`}
+      className={`rounded-2xl border border-ink-100 bg-white p-6 sm:p-7 transition-colors duration-300 ${colorway.hoverBorder}`}
     >
       <span
-        className={`inline-flex h-11 w-11 items-center justify-center rounded-xl ${colorway.bg} ${colorway.fg} mb-5`}
+        className={`inline-flex h-11 w-11 items-center justify-center rounded-xl border ${colorway.stroke} ${colorway.bg} ${colorway.fg} mb-5`}
       >
         <Icon fontSize="small" />
       </span>
