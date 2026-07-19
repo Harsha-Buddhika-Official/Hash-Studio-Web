@@ -5,8 +5,25 @@ import { SERVICE_COLORWAYS } from "../shared/serviceColorways";
 import { buildWhatsAppLink } from "../../data/siteConfig";
 
 export default function ServiceCard({ service }) {
-  const Icon = SERVICE_ICONS[service.icon];
-  const colorway = SERVICE_COLORWAYS[service.colorway];
+  const resolvedIcon = SERVICE_ICONS[service.icon];
+  const resolvedColorway = SERVICE_COLORWAYS[service.colorway];
+
+  if (!resolvedIcon) {
+    console.warn(
+      `ServiceCard: no icon registered for icon="${service.icon}" (service: "${service.title}"). Check src/components/shared/serviceIcons.js.`
+    );
+  }
+  if (!resolvedColorway) {
+    console.warn(
+      `ServiceCard: no colorway registered for colorway="${service.colorway}" (service: "${service.title}"). Check src/components/shared/serviceColorways.js.`
+    );
+  }
+
+  // Fall back to an icon/colorway we already know imports successfully in this file,
+  // rather than pulling in a new icon module that might not resolve.
+  const Icon = resolvedIcon ?? CheckCircleIcon;
+  const colorway = resolvedColorway ?? SERVICE_COLORWAYS.blue;
+
   const whatsappHref = buildWhatsAppLink(
     service.whatsappMessage ??
       `Hi Hash Studio! I'm interested in your ${service.title} service. Could you tell me more about pricing and timelines?`
@@ -14,7 +31,7 @@ export default function ServiceCard({ service }) {
 
   return (
     <div
-      className={`rounded-2xl border bg-white p-6 sm:p-7 flex flex-col
+      className={`h-full rounded-2xl border bg-white p-6 sm:p-7 flex flex-col
         transition-all duration-300 ease-out
         hover:-translate-y-1
         border-ink-100 ${colorway.hoverBorder} ${colorway.hoverBg} ${colorway.glow}`}

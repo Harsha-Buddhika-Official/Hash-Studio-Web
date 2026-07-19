@@ -1,43 +1,43 @@
 export const valuesIntro = {
-  heading: "Values that Drive Growth",
+  heading: "Values That Shape Our Creativity",
   description:
-    "We don't just build websites; we architect digital futures that help businesses scale beyond their imagination.",
+    "We believe great design is more than just visuals. It's about creating meaningful experiences that help brands connect, communicate, and stand out.",
 };
 
 export const values = [
   {
-    id: "strategic-innovation",
+    id: "creative-thinking",
     icon: "innovation",
-    title: "Strategic Innovation",
+    title: "Creative Thinking",
     description:
-      "We blend data-driven research with avant-garde creativity to solve complex business challenges with elegant digital solutions.",
+      "We combine creativity, strategy, and fresh ideas to create unique designs that represent your brand and connect with your audience.",
     variant: "light",
     span: "wide",
   },
   {
-    id: "impact-first",
+    id: "client-focused",
     icon: "impact",
-    title: "Impact First",
+    title: "Client Focused",
     description:
-      "Our success is measured by the growth and scalability we unlock for our global partners.",
+      "We listen, understand your goals, and work closely with you to deliver designs that match your vision and expectations.",
     variant: "teal",
     span: "narrow",
   },
   {
-    id: "artistic-precision",
+    id: "design-precision",
     icon: "precision",
-    title: "Artistic Precision",
+    title: "Design Precision",
     description:
-      'Meticulous attention to every pixel, ensuring a premium "gallery" effect for your brand.',
+      "Every detail matters. From typography and colors to layouts and finishing touches, we ensure every design feels polished and professional.",
     variant: "orange",
     span: "narrow",
   },
   {
-    id: "human-centric",
+    id: "purpose-driven-design",
     icon: "human",
-    title: "Human-Centric Design",
+    title: "Purpose-Driven Design",
     description:
-      "Technology is powerful, but only when it serves the user. We create interfaces that feel natural, intuitive, and emotionally resonant.",
+      "We create designs that are not only visually attractive but also meaningful, helping brands communicate their story effectively.",
     variant: "light",
     span: "wide",
     withImage: true,

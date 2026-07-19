@@ -169,6 +169,9 @@ export const portfolioProjects = rawProjects
   .reverse();
 
 export const portfolioCta = {
-  heading: "Ready to start your project?",
-  cta: { label: "Let's Work Together", href: buildWhatsAppLink() },
+  heading: "Have a project in mind?",
+  cta: { 
+    label: "Let's Create Together", 
+    href: buildWhatsAppLink() 
+  },
 };

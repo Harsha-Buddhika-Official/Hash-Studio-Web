@@ -1,5 +1,5 @@
 export const blueprintIntro = {
-  eyebrow: "Our Methodology",
+  eyebrow: "Our Creative Process",
   heading: "The Hash Blueprint",
 };
 
@@ -9,7 +9,7 @@ export const blueprintSteps = [
     number: "01",
     title: "Discovery",
     description:
-      "Deep diving into your brand's DNA, market position, and core objectives through collaborative workshops.",
+      "Understanding your brand, goals, audience, and vision to create a clear creative direction that matches your identity.",
     icon: "discovery",
     color: "brand",
     side: "left",
@@ -19,7 +19,7 @@ export const blueprintSteps = [
     number: "02",
     title: "Research",
     description:
-      "Analyzing competitors, trends, and user behaviors to carve out a unique competitive advantage for your product.",
+      "Exploring industry trends, competitors, and visual styles to create designs that are unique, relevant, and impactful.",
     icon: "research",
     color: "orange",
     side: "right",
@@ -27,9 +27,9 @@ export const blueprintSteps = [
   {
     id: "concept",
     number: "03",
-    title: "Concept",
+    title: "Creative Concept",
     description:
-      "Translating insights into bold visual directions and moodboards that define the emotional soul of the project.",
+      "Developing creative ideas, visual directions, and design concepts that capture the personality of your brand.",
     icon: "concept",
     color: "coral",
     side: "left",
@@ -37,9 +37,9 @@ export const blueprintSteps = [
   {
     id: "design",
     number: "04",
-    title: "Design",
+    title: "Design & Refinement",
     description:
-      "Iterative high-fidelity UI/UX design focusing on seamless transitions, accessibility, and pixel-perfection.",
+      "Transforming concepts into polished designs with attention to detail, visual balance, and a professional finish.",
     icon: "design",
     color: "brand",
     side: "right",
@@ -49,7 +49,7 @@ export const blueprintSteps = [
     number: "05",
     title: "Final Delivery",
     description:
-      "A comprehensive hand-off including design systems, assets, and documentation for a seamless implementation.",
+      "Delivering high-quality design files and assets ready for your brand, marketing, and digital platforms.",
     icon: "delivery",
     color: "orange",
     side: "left",

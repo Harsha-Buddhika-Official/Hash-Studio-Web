@@ -2,17 +2,17 @@ import { buildWhatsAppLink, PHONE_DISPLAY, EMAIL, SOCIAL_LINKS } from "./siteCon
 
 export const contactHero = {
   headline: [
-    { text: "Let's build something", accent: false },
-    { text: "extraordinary.", accent: true },
+    { text: "Let's create something", accent: false },
+    { text: "unforgettable.", accent: true },
   ],
   description:
-    "Whether you have a fully-formed idea or just a spark of inspiration, we're here to help you navigate the digital landscape. Let's start the conversation.",
+    "Have a creative idea in mind or need help building your brand identity? We're here to transform your vision into impactful designs that connect with your audience.",
 };
 
 export const kickoffCard = {
-  title: "Instant Project Kickoff",
+  title: "Start Your Creative Project",
   description:
-    "Skip the waiting game. Chat with our creative leads directly on WhatsApp for an immediate response.",
+    "Connect directly with our creative team through WhatsApp and discuss your design ideas, requirements, and vision.",
   cta: { label: "Chat on WhatsApp", href: buildWhatsAppLink() },
 };
 
@@ -23,21 +23,22 @@ export const contactChannels = [
 
 export const socialLinks = [
   { id: "facebook", label: "Facebook", href: SOCIAL_LINKS.facebook },
-  { id: "instagram", label: "Instagram", href: SOCIAL_LINKS.instagram },
-  { id: "behance", label: "Behance", href: SOCIAL_LINKS.behance },
+  // { id: "instagram", label: "Instagram", href: SOCIAL_LINKS.instagram },
+  // { id: "behance", label: "Behance", href: SOCIAL_LINKS.behance },
 ];
 
 export const projectTypes = [
   "Brand Identity",
   "Logo Design",
-  "Social Media",
+  "Social Media Design",
   "Packaging Design",
+  "Flyer & Poster Design",
   "UI/UX Design",
-  "Vehicle Branding",
+  "T-Shirt Design",
   "Something Else",
 ];
 
 export const inquiryFormCopy = {
-  heading: "Send an Inquiry",
+  heading: "Start Your Design Journey",
   submitLabel: "Send Inquiry",
 };

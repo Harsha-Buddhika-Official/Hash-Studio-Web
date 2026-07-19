@@ -9,8 +9,6 @@ export const navLinks = [
 ];
 
 export const footerLinks = [
-  { label: "Instagram", href: SOCIAL_LINKS.instagram },
-  { label: "Dribbble", href: SOCIAL_LINKS.dribbble },
-  { label: "Behance", href: SOCIAL_LINKS.behance },
+  { label: "Facebook", href: SOCIAL_LINKS.facebook },
   { label: "WhatsApp", href: buildWhatsAppLink() },
 ];

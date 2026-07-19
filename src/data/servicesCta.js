@@ -1,9 +1,9 @@
 import { buildWhatsAppLink } from "./siteConfig";
 
 export const servicesCta = {
-  heading: "Ready to start your project?",
+  heading: "Ready to bring your ideas to life?",
   description:
-    "Let's discuss how we can transform your vision into a stunning reality. Our team is ready to jump into the details.",
+    "Let's discuss your brand, design needs, and creative goals. Our team is ready to help you create visuals that make a lasting impression.",
   primaryCta: { label: "Start WhatsApp Chat", href: buildWhatsAppLink() },
   secondaryCta: { label: "View Portfolio", href: "/portfolio" },
 };

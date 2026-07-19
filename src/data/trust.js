@@ -1,13 +1,13 @@
-export const trustHeading = "Why partners trust Hash Studio";
+export const trustHeading = "Why clients choose Hash Studio";
 
 export const trustItems = [
   {
-    id: "detail-oriented",
+    id: "creative-quality",
     kind: "text",
     span: "wide",
-    title: "Detail Oriented Craft",
+    title: "Creative Quality",
     description:
-      "We don't just design; we curate every pixel to ensure absolute perfection in the final deliverable.",
+      "Every design is carefully crafted with attention to detail, ensuring your brand gets a professional and memorable visual identity.",
   },
   {
     id: "retention",
@@ -17,19 +17,20 @@ export const trustItems = [
     caption: "Client Retention",
   },
   {
-    id: "fast-turnaround",
+    id: "reliable-service",
     kind: "text",
     span: "narrow",
-    title: "Fast Turnaround",
+    title: "Reliable Service",
     description:
-      "Rapid execution without compromising the avant-garde quality we're known for.",
+      "We focus on clear communication, timely delivery, and creating designs that match your vision.",
   },
   {
-    id: "global-reach",
+    id: "creative-solutions",
     kind: "icon",
     span: "wide",
-    icon: "globe",
-    title: "Global Reach",
-    description: "Serving innovative startups and established firms across 12 countries.",
+    icon: "sparkle",
+    title: "Creative Solutions",
+    description:
+      "From logos and branding to social media and packaging designs, we create visuals that help businesses stand out.",
   },
 ];

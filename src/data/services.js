@@ -1,12 +1,12 @@
 export const servicesHero = {
-  eyebrow: "Our Capabilities",
+  eyebrow: "Our Creative Services",
   headline: [
-    { text: "Elevating brands", accent: false },
-    { text: "through boundary-", accent: true },
-    { text: "pushing design.", accent: true },
+    { text: "Creating designs", accent: false },
+    { text: "that make brands", accent: true },
+    { text: "stand out.", accent: true },
   ],
   description:
-    "We combine strategic thinking with avant-garde aesthetics to help modern businesses stand out in a saturated digital landscape.",
+    "We transform ideas into meaningful visual experiences through branding, graphic design, packaging, and digital solutions that help businesses build a memorable identity.",
 };
 
 export const services = [
@@ -16,11 +16,11 @@ export const services = [
     colorway: "blue",
     title: "Logo Design",
     description:
-      "Creating iconic, memorable visual anchors that capture your brand's essence in its simplest, most powerful form.",
-    tags: ["VISUAL IDENTITY", "STRATEGY"],
-    features: ["Custom wordmarks", "Vector scalability", "Brand symbolism"],
+      "Creating unique and memorable logos that represent your brand's personality and build a strong visual identity.",
+    tags: ["VISUAL IDENTITY", "BRANDING"],
+    features: ["Custom logo concepts", "Vector files", "Brand symbolism"],
     whatsappMessage:
-      "Hi Hash Studio! I'd like a custom logo designed for my brand. Can we discuss the process and pricing?",
+      "Hi Hash Studio! I'd like to create a logo for my brand. Can we discuss the process and pricing?",
   },
   {
     id: "brand-identity",
@@ -28,23 +28,23 @@ export const services = [
     colorway: "purple",
     title: "Brand Identity",
     description:
-      "A comprehensive visual language including color theory, typography systems, and stylistic guidelines for global consistency.",
-    tags: ["BRANDING", "GUIDELINES"],
-    features: ["Visual guidelines", "Type hierarchy", "Color strategy"],
+      "Building a complete visual system with colors, typography, and design guidelines that create a consistent brand experience.",
+    tags: ["BRANDING", "STRATEGY"],
+    features: ["Brand guidelines", "Color systems", "Typography selection"],
     whatsappMessage:
-      "Hi Hash Studio! I'm looking to build a complete brand identity — logo, colors, typography, guidelines. Can we chat?",
+      "Hi Hash Studio! I'm interested in creating a complete brand identity for my business. Can we discuss?",
   },
   {
     id: "social-media",
     icon: "social",
     colorway: "orange",
-    title: "Social Media",
+    title: "Social Media Design",
     description:
-      "High-engagement digital content tailored for Instagram, LinkedIn, and TikTok that turns followers into loyal brand advocates.",
-    tags: ["INSTAGRAM", "MOTION"],
-    features: ["Feed layouts", "Motion graphics", "Story templates"],
+      "Creative social media visuals designed to increase engagement and help your brand communicate effectively online.",
+    tags: ["SOCIAL MEDIA", "CONTENT"],
+    features: ["Post designs", "Story templates", "Campaign creatives"],
     whatsappMessage:
-      "Hi Hash Studio! I need help with social media content — feed design, motion graphics, or story templates. Let's talk.",
+      "Hi Hash Studio! I need social media designs for my business. Can we discuss the requirements?",
   },
   {
     id: "poster-design",
@@ -52,11 +52,11 @@ export const services = [
     colorway: "red",
     title: "Poster Design",
     description:
-      "Bold and creative promotional posters that communicate your message clearly while capturing attention instantly.",
+      "Eye-catching posters designed to promote events, campaigns, products, and important announcements.",
     tags: ["PRINT", "PROMOTION"],
-    features: ["Eye-catching visuals", "Clear messaging", "Print-ready files"],
+    features: ["Creative concepts", "Visual hierarchy", "Print-ready files"],
     whatsappMessage:
-      "Hi Hash Studio! I need a poster designed for an upcoming promotion/event. Can you help?",
+      "Hi Hash Studio! I need a poster design for my project/event. Can we discuss?",
   },
   {
     id: "flyer-design",
@@ -64,23 +64,11 @@ export const services = [
     colorway: "yellow",
     title: "Flyer Design",
     description:
-      "Professionally designed flyers that effectively promote events, businesses, products, and services.",
+      "Professional flyers that clearly communicate your message while attracting attention from your target audience.",
     tags: ["MARKETING", "PRINT"],
-    features: ["Event promotion", "Multi-format layouts", "Fast turnaround"],
+    features: ["Business flyers", "Event flyers", "Digital formats"],
     whatsappMessage:
-      "Hi Hash Studio! I'd like a flyer designed to promote my business/event. What's the process?",
-  },
-  {
-    id: "banner-design",
-    icon: "banner",
-    colorway: "green",
-    title: "Banner Design",
-    description:
-      "Eye-catching digital and print banners crafted for maximum visibility and strong brand presence.",
-    tags: ["DIGITAL", "ADVERTISING"],
-    features: ["Web & print banners", "High visibility", "Brand consistency"],
-    whatsappMessage:
-      "Hi Hash Studio! I need a banner designed (digital or print). Can we discuss the details?",
+      "Hi Hash Studio! I'd like a flyer designed for my business/event. Can we discuss?",
   },
   {
     id: "packaging-design",
@@ -88,11 +76,11 @@ export const services = [
     colorway: "coral",
     title: "Packaging Design",
     description:
-      "Tactile experiences that delight customers. We design packaging that communicates quality before the product is even opened.",
-    tags: ["SUSTAINABLE", "3D MOCKUPS"],
-    features: ["Structure & form", "Sustainable specs", "Shelf impact"],
+      "Creative packaging solutions that improve product presentation and create memorable customer experiences.",
+    tags: ["PRODUCT", "PACKAGING"],
+    features: ["Label concepts", "Product mockups", "Print-ready designs"],
     whatsappMessage:
-      "Hi Hash Studio! I'm interested in packaging design for my product. Could we discuss options and pricing?",
+      "Hi Hash Studio! I'm interested in packaging design for my product. Can we discuss?",
   },
   {
     id: "label-design",
@@ -100,11 +88,11 @@ export const services = [
     colorway: "pink",
     title: "Label Design",
     description:
-      "Professional product labels that balance compliance, readability, and shelf appeal.",
-    tags: ["PRODUCT", "PACKAGING"],
-    features: ["Compliance ready", "Shelf appeal", "Print-perfect files"],
+      "Professional product labels designed to balance brand identity, information, and visual appeal.",
+    tags: ["PRODUCT", "LABELS"],
+    features: ["Custom layouts", "Brand consistency", "Print files"],
     whatsappMessage:
-      "Hi Hash Studio! I need product labels designed. Can you walk me through the process?",
+      "Hi Hash Studio! I need product label designs. Can we discuss the details?",
   },
   {
     id: "business-card",
@@ -112,11 +100,11 @@ export const services = [
     colorway: "indigo",
     title: "Business Card Design",
     description:
-      "Premium business cards that strengthen first impressions and reflect your brand's professionalism.",
-    tags: ["PRINT", "NETWORKING"],
-    features: ["Premium finishes", "Print-ready files", "Networking impact"],
+      "Premium business cards designed to create strong first impressions and represent your brand professionally.",
+    tags: ["PRINT", "BUSINESS"],
+    features: ["Modern layouts", "Premium styles", "Print-ready files"],
     whatsappMessage:
-      "Hi Hash Studio! I'd like premium business cards designed for my brand. What's the pricing?",
+      "Hi Hash Studio! I'd like a business card design for my brand. Can we discuss?",
   },
   {
     id: "menu-design",
@@ -124,23 +112,11 @@ export const services = [
     colorway: "amber",
     title: "Menu Design",
     description:
-      "Modern restaurant and café menus designed to enhance customer experience and highlight your offerings.",
+      "Modern menu designs that improve customer experience and showcase your food or services beautifully.",
     tags: ["RESTAURANT", "PRINT"],
-    features: ["Menu hierarchy", "Appetizing layout", "Print & digital"],
+    features: ["Clean layouts", "Digital menus", "Print designs"],
     whatsappMessage:
-      "Hi Hash Studio! I run a restaurant/café and need a menu designed. Can we discuss?",
-  },
-  {
-    id: "billboard-design",
-    icon: "billboard",
-    colorway: "lime",
-    title: "Billboard Design",
-    description:
-      "Large-format advertising designed for maximum visibility and memorable brand recognition.",
-    tags: ["OUTDOOR", "ADVERTISING"],
-    features: ["Large-format specs", "High-impact visuals", "Outdoor durability"],
-    whatsappMessage:
-      "Hi Hash Studio! I'm interested in billboard/large-format advertising design. Can we talk details?",
+      "Hi Hash Studio! I need a menu design for my restaurant/café. Can we discuss?",
   },
   {
     id: "ui-ux-design",
@@ -148,22 +124,22 @@ export const services = [
     colorway: "sky",
     title: "UI/UX Design",
     description:
-      "Digital interfaces that are as intuitive as they are beautiful. Focused on seamless user journeys and aesthetic clarity.",
+      "Beautiful and user-friendly interface designs that create smooth digital experiences for websites and applications.",
     tags: ["WEB", "MOBILE"],
-    features: ["Prototyping", "Design systems", "App & web interfaces"],
+    features: ["Wireframes", "Prototypes", "Interface design"],
     whatsappMessage:
-      "Hi Hash Studio! I need UI/UX design for a website or app. Could we discuss my project?",
+      "Hi Hash Studio! I need UI/UX design for my website or app. Can we discuss?",
   },
   {
-    id: "vehicle-branding",
-    icon: "vehicle",
-    colorway: "blue",
-    title: "Vehicle Branding",
+    id: "t-shirt-design",
+    icon: "tshirt",
+    colorway: "green",
+    title: "T-Shirt Design",
     description:
-      "Moving billboards. We design high-impact vehicle wraps that turn heads and build brand recognition on the road.",
-    tags: ["FLEET", "WRAPS"],
-    features: ["Full wraps", "Fleet graphics", "Layout precision"],
+      "Creative apparel designs that bring ideas, communities, and brands to life through unique visuals.",
+    tags: ["APPAREL", "PRINT"],
+    features: ["Custom artwork", "Print-ready files", "Creative concepts"],
     whatsappMessage:
-      "Hi Hash Studio! I'm interested in vehicle branding/wraps for my business. Can you share more details?",
+      "Hi Hash Studio! I need a custom T-shirt design. Can we discuss?",
   },
 ];
