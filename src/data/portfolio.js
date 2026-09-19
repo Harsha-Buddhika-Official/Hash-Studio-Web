@@ -25,6 +25,31 @@ export const categoryColors = {
 
 const rawProjects = [
   {
+    title: "Resturent Post",
+    categories: ["Social Media"],
+    image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1789810582/WhatsApp_Image_2026-09-02_at_7.39.38_PM_sx4wgg.jpg",
+  },
+  {
+    title: "Resturent Post",
+    categories: ["Social Media"],
+    image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1789810582/WhatsApp_Image_2026-09-02_at_9.50.09_PM_cvsylw.jpg",
+  },
+  {
+    title: "Resturent Post",
+    categories: ["Social Media"],
+    image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1789810582/WhatsApp_Image_2026-09-12_at_7.35.40_AM_acl45n.jpg",
+  },
+  {
+    title: "Resturent Post",
+    categories: ["Social Media"],
+    image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1789810582/WhatsApp_Image_2026-09-02_at_4.29.22_PM_1_uaqju1.jpg",
+  },
+  {
+    title: "Resturent Post",
+    categories: ["Social Media"],
+    image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1789810582/WhatsApp_Image_2026-09-09_at_9.20.01_PM_ipragm.jpg",
+  },
+  {
     title: "Tution Class",
     categories: ["Social Media"],
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784366241/Post_9_hhumqr.jpg",
