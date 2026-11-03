@@ -30,6 +30,11 @@ const rawProjects = [
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1789963035/Gemini_Generated_Image_6toe6l6toe6l6toe_xvcqgv.jpg",
   },
   {
+    title: "Packaging Design",
+    categories: ["Packaging"],
+    image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1793696672/Gemini_Generated_Image_egdzi1egdzi1egdz_h2nouk.jpg",
+  },
+  {
     title: "Resturent Post",
     categories: ["Social Media"],
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1789810582/WhatsApp_Image_2026-09-02_at_7.39.38_PM_sx4wgg.jpg",
