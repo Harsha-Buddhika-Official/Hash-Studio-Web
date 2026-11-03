@@ -62,11 +62,6 @@ const rawProjects = [
   {
     title: "Tution Class",
     categories: ["Social Media"],
-    image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784366241/Post_9_hhumqr.jpg",
-  },
-  {
-    title: "Tution Class",
-    categories: ["Social Media"],
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784366242/Post_8_jlavaj.jpg",
   },
   {
@@ -75,7 +70,7 @@ const rawProjects = [
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784366178/Post_1_dn9db2.jpg",
   },
   {
-    title: "Tution Class",
+    title: "Cake Shop Post",
     categories: ["Social Media"],
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784366177/Post_2_nh79pj.jpg",
   },
@@ -100,7 +95,7 @@ const rawProjects = [
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784370950/Gemini_Generated_Image_bynf74bynf74bynf_t7ltdb.png",
   },
   {
-    title: "Tution Class",
+    title: "Beuty product Post",
     categories: ["Social Media"],
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784366187/Post_5_au61tv.jpg",
   },
@@ -165,17 +160,12 @@ const rawProjects = [
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784370159/Gemini_Generated_Image_ull8p3ull8p3ull8_mtgbcd.png",
   },
   {
-    title: "Flyer Design",
-    categories: ["Flyer"],
-    image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784366208/flyer_5_u2wsjp.jpg",
-  },
-  {
     title: "Logo Design",
     categories: ["Logo"],
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784370156/Gemini_Generated_Image_8h6xb48h6xb48h6x_w5kh0r.png",
   },
   {
-    title: "Tution Class",
+    title: "beauty product Post",
     categories: ["Social Media"],
     image: "https://res.cloudinary.com/s6n4v4vu/image/upload/v1784366198/Post_4_cumlfa.jpg",
   },
